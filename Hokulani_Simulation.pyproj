@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{83ac3326-7389-4c21-ae15-34dc5c62e1b5}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile />
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Hokulani\Configuration.py" />
+    <Compile Include="Hokulani\Execptions.py" />
+    <Compile Include="Hokulani\Generation.py" />
+    <Compile Include="Hokulani\IO.py" />
+    <Compile Include="Hokulani\Mechanics.py" />
+    <Compile Include="Hokulani\Particle.py" />
+    <Compile Include="Hokulani\Simulation.py" />
+    <Compile Include="Hokulani\Validation.py" />
+    <Compile Include="Hokulani\Varieties.py" />
+    <Compile Include="Hokulani\Visualization.py" />
+    <Compile Include="Hokulani\__init__.py" />
+    <Compile Include="Hokulani_Simulation.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Hokulani\" />
+    <Folder Include="Hokulani\.vs\" />
+    <Folder Include="Hokulani\__pycache__\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Hokulani\__pycache__\Class_Extraction.cpython-36.pyc" />
+    <Content Include="Hokulani\__pycache__\Configuration.cpython-36.pyc" />
+    <Content Include="Hokulani\__pycache__\Execptions.cpython-36.pyc" />
+    <Content Include="Hokulani\__pycache__\Generation.cpython-36.pyc" />
+    <Content Include="Hokulani\__pycache__\Mechanics.cpython-36.pyc" />
+    <Content Include="Hokulani\__pycache__\Particle.cpython-36.pyc" />
+    <Content Include="Hokulani\__pycache__\Particle_Class.cpython-36.pyc" />
+    <Content Include="Hokulani\__pycache__\Simulation.cpython-36.pyc" />
+    <Content Include="Hokulani\__pycache__\Validation.cpython-36.pyc" />
+    <Content Include="Hokulani\__pycache__\Varieties.cpython-36.pyc" />
+    <Content Include="Hokulani\__pycache__\Visualization.cpython-36.pyc" />
+    <Content Include="Hokulani\__pycache__\__init__.cpython-36.pyc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
