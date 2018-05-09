@@ -214,7 +214,7 @@ class Particle:
                       vel=self.velocity,
                       accel=self.acceleration))
         print('Mass:  {mas}'
-              .format(mass=self.mass))
+              .format(mas=self.mass))
         print('Variety:  {vary}    Dark Matter:  {dark_m}'
               .format(vary=vary_string,
                       dark_m=self.dark_matter))

@@ -19,7 +19,7 @@ RELETIVE_SIMULATION_LENGTH = 10
 # This establishes the total number of iterations of the simulation. Please
 #   note that the absolute time that the simulation runs for is of the order 
 #   O(n^2) for an increasing value.
-TOTAL_ITERATION_COUNT = int(5e5)
+TOTAL_ITERATION_COUNT = int(1e5)
 
 # This defines the number of spatial dimensions the simulation will run 
 #   over. It does not make much sense to have more than three.
@@ -97,8 +97,9 @@ DEFAULT_VARIETY_CODE = Hoku_Vary.convert_variety_string_to_code(
 
 
 # If the user desired the warnings were suppressed, suppress the warnings.
-if (SUPPRESS_WARNINGS):
-    # Ignore numpy's warnings.
-    np.warnings.filterwarnings('ignore')
-    # Ignore scipy's warnings.
-    sp.warnings.filterwarnings('ignore')
+def CONFIG_PROCESS():
+    if (SUPPRESS_WARNINGS):
+        # Ignore numpy's warnings.
+        np.warnings.filterwarnings('ignore')
+        # Ignore scipy's warnings.
+        sp.warnings.filterwarnings('ignore')
